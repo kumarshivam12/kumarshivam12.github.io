@@ -1,4 +1,11 @@
 # HTML
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Free Trial(c5d025e2-f372-460c-8b10-b8a8465e95c2)'
+    appType: 'webApp'
+    WebAppName: 'kshivam'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
 # Archive your static HTML project and save it with the build record.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
