@@ -452,7 +452,7 @@
    		<div class="col-twelve">
 
             <!-- form -->
-            <form name="contactForm" id="contactForm" method="post" data-netlify="true">
+            <form name="contactForm" id="contactForm" method="POST" data-netlify="true">
       			<fieldset>
 
                   <div class="form-field">
@@ -481,20 +481,30 @@
 
       			</fieldset>
       		</form> <!-- Form End -->
-					<form name="contact" method="POST" data-netlify="true">
-  <p>
-    <label>Your Name: <input type="text" name="name" /></label>   
-  </p>
-  <p>
-    <label>Your Email: <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form>
+		<form name="contact" method="POST" data-netlify="true">
+					  <p>
+					    <label>Your Name: <input type="text" name="name" /></label>   
+					  </p>
+					  <p>
+					    <label>Your Email: <input type="email" name="email" /></label>
+					  </p>
+					  <p>
+					    <label>Message: <textarea name="message"></textarea></label>
+					  </p>
+					  <p>
+						  <button class="submitform">Submit</button>
+                     <div id="submit-loader">
+                        <div class="text-loader">Sending...</div>                             
+       				      <div class="s-loader">
+								  	<div class="bounce1"></div>
+								  	<div class="bounce2"></div>
+								  	<div class="bounce3"></div>
+								</div>
+							</div>
+                  </div>
+					    <button type="submit">Send</button>
+					  </p>
+		</form>
 
             <!-- contact-warning -->
             <div id="message-warning">            	
