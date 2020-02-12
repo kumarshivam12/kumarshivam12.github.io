@@ -12,7 +12,7 @@ jobs:
       uses: yanzay/notify-telegram@v0.1.0
       with:
         # Chat to send: chat id or @channel_name
-        chat: ${{ secrets.TELEGRAM_TO }}
+        chat: kshivam612
         # Telegram Bot token
         token: ${{ secrets.TELEGRAM_TOKEN }}
         # Job status
