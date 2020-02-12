@@ -1,0 +1,16 @@
+name: telegram message
+on: [push]
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: send custom message
+        uses: appleboy/telegram-action@0.0.3
+        with:
+          to:@kshivam612
+          token:1037738407:AAEInwnACKH68eWlGSRfkZVt2zKKGjsF-48
+          message:|
+            The ${{ github.event_name }} event triggered final step.
+            echo This event is a ${{ github.event_name }} request that had an assignee removed.
