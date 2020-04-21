@@ -11,4 +11,4 @@ jobs:
       with:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
-        args: Hey there! This is virtual Shivam,Saying --> There is an ${{ github.event_name }} event triggered in your Portfolio.Kindly Visit and Acknoledge
+        args: Hey there! This is virtual Shivam,Saying --> There is an ${{ github.event_name }} event triggered in your Portfolio.Kindly Visit and Acknowledge
